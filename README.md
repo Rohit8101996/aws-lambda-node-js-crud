@@ -10,25 +10,6 @@ This APPLICATION USES SERVERLESS FRAMEWORK TO BUILD A BACKEND CRUD APPLICATION I
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--
 title: 'AWS Simple HTTP Endpoint example in NodeJS'
 description: 'This template demonstrates how to make a simple HTTP API with Node.js running on AWS Lambda and API Gateway using the Serverless Framework.'
@@ -131,40 +112,38 @@ Steps for CRUD aws lambda node app
 
 
 
-First Create AWS Account 
+1. First Create AWS Account 
 
-create a iam user which have permissions to execute lambda(for now admin access)
+2. Create a iam user which have permissions to execute lambda(for now admin access)
 
-Now Install AWS CLI 2.0
+3. Now Install AWS CLI 2.0
 
-CONFIGURE AWS CLI LOCALLY USING aws configure
+4. CONFIGURE AWS CLI LOCALLY USING aws configure
 
-Once done we will use serverless framework to create lambda template download it using npm i.e., npm install -g serverless
+5. Once done we will use serverless framework to create lambda template download it using npm i.e., npm install -g serverless
 
-run serverless command
+6. run serverless command
 
-chhosse a template ., i choose aws -node-js -rest api temp
+7. chhosse a template ., i choose aws -node-js -rest api temp
 
-deploy during start . u will see stack sets created in clod formation , lambda and api gateway got created
+8. deploy during start . u will see stack sets created in clod formation , lambda and api gateway got created
 
-api path visible on terminal to test via postman 
-
-
-change region in serverless.yml 
-
-try deploying it again serverless deploy -v
-
-Also serverless remove --stage dev --region us-east-1
-to remove all resource created 
-
-Organise files under folders in the template project like all handlers under handler package
+9. api path visible on terminal to test via postman 
 
 
-Now WE WILL BUILD CRUD APP using aws lambda 
+10. change region in serverless.yml 
 
-for this we need to have a db , with aws we have a great nosql db dynamo db which actually fetches data 
+11. try deploying it again serverless deploy -v
+
+12. Also serverless remove --stage dev --region us-east-1 to remove all resource created 
+
+13. Organise files under folders in the template project like all handlers under handler package
+
+14. Now WE WILL BUILD CRUD APP using aws lambda 
+
+5. for this we need to have a db , with aws we have a great nosql db dynamo db which actually fetches data 
 we can provision anything using serverless framework which is IAAC for now we will go with dynamodb 
 
-update serverless.yml for dynamodb tbl creation and lambda creation 
+16. update serverless.yml for dynamodb tbl creation and lambda creation 
 with permission to access dynamodb from lambda 
 Also create handlers and add them to serverless.yml to multiple handlers support in one lambda 
