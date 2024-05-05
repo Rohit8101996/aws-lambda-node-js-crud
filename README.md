@@ -1,3 +1,34 @@
+
+
+
+
+
+
+
+
+This APPLICATION USES SERVERLESS FRAMEWORK TO BUILD A BACKEND CRUD APPLICATION IN NODEJS LAMBDA 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
 title: 'AWS Simple HTTP Endpoint example in NodeJS'
 description: 'This template demonstrates how to make a simple HTTP API with Node.js running on AWS Lambda and API Gateway using the Serverless Framework.'
